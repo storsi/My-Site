@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #333;
+}
+
+nav {
+    width: 5%;
+    height: 100vh;
+    background-color: black;
+}
+
+ul {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    text-align: center;
+}
+
+li {
+    color: white;
+    font-size: 3vh;
+}
