@@ -5,15 +5,16 @@
 
 body {
     background-color: #333;
+    user-select: none;
 }
 
 nav {
-    width: 18%;
+    width: 5%;
     height: 100vh;
     background-color: black;
     text-align: center;
-    display: table-cell;
-    vertical-align: middle;
+    position: fixed;
+    top: 0;
 }
 
 ul {
@@ -27,4 +28,90 @@ li {
     padding-bottom: 10%;
     font-size: 3vh;
     cursor: pointer;
+}
+
+.titolo {
+    margin-top: 3%;
+    color: rgb(255, 62, 62);
+    text-align: center;
+    font-size: 7vh;
+}
+
+.spiegazione {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 3vh;
+}
+
+.contenitore {
+    width: 70%;
+    height: 30vh;
+    margin: auto;
+    display: inline-block;
+    position: absolute;
+    left: 15%;
+    top: 30%;
+}
+
+.contenitore > div {
+    width: 30%;
+    height: 30vh;
+    display: inline-block;
+    margin: 1.5%;
+    position: relative;
+}
+
+.contenitore > div > img {
+    width: 100%;
+    height: 30vh;
+    border-radius: 5px;
+    border: 3px solid white;
+}
+
+.overlay {
+    height: 30vh;
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0);
+    transition: 1s;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.nome {
+    width: 100%;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 30%;
+    font-size: 4vh;
+    transition: 2s;
+    color: whitesmoke;
+}
+
+.scopri {
+    width: 40%;
+    height: 4vh;
+    background-color: rgb(255, 62, 62);
+    border: none;
+    color: white;
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    cursor: pointer;
+}
+
+.contenitore > div:hover .overlay{
+    background-color: rgba(10, 10, 10, .8);
+}
+
+.contenitore > div:hover .nome, .contenitore > div:hover .scopri{
+    display: block;
+}
+
+.scopri:hover {
+    background-color: rgb(145, 0, 0);
 }
